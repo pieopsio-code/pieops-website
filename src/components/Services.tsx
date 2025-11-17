@@ -112,7 +112,7 @@ export function Services() {
                 <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <p className={`text-sm font-medium bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}>
+                <p className={`text-sm font-medium bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`} style={{ backgroundSize: '100% 100%' }}>
                   {service.outcome}
                 </p>
               </div>
