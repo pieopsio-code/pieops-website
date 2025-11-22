@@ -1,10 +1,13 @@
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +18,24 @@ export function Header() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    if (location.pathname === '/') {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/', { state: { scrollTo: id } });
     }
+    setIsMenuOpen(false);
+  };
+
+  const goToBlogs = () => {
+    if (location.pathname !== '/blogs') {
+      navigate('/blogs');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -75,6 +91,13 @@ export function Header() {
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-bright to-neon-purple group-hover:w-full transition-all duration-300"></span>
             </button>
+            <button
+              onClick={goToBlogs}
+              className="text-gray-300 hover:text-white transition-colors text-sm relative group"
+            >
+              Blogs
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-hot-pink group-hover:w-full transition-all duration-300"></span>
+            </button>
             <motion.button
               onClick={() => scrollToSection('contact')}
               className="relative bg-gradient-to-r from-neon-purple to-hot-pink text-white px-6 py-2 rounded-full overflow-hidden group"
@@ -111,6 +134,12 @@ export function Header() {
               className="text-gray-300 hover:text-white transition-colors text-sm text-left"
             >
               Contact
+            </button>
+            <button
+              onClick={goToBlogs}
+              className="text-gray-300 hover:text-white transition-colors text-sm text-left"
+            >
+              Blogs
             </button>
             <button
               onClick={() => scrollToSection('contact')}

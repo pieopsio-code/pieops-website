@@ -59,33 +59,6 @@ export function About() {
               excellence, we deliver solutions that drive measurable business
               outcomes.
             </p>
-
-            <motion.div
-              className="mt-8 flex gap-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-neon-purple to-hot-pink bg-clip-text text-transparent">
-                  10+
-                </div>
-                <div className="text-sm text-gray-400 mt-1">Years Experience</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-electric-blue to-cyber-cyan bg-clip-text text-transparent">
-                  50+
-                </div>
-                <div className="text-sm text-gray-400 mt-1">Team Members</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-teal-bright to-orange-bright bg-clip-text text-transparent">
-                  95%
-                </div>
-                <div className="text-sm text-gray-400 mt-1">Client Retention</div>
-              </div>
-            </motion.div>
           </motion.div>
 
           <div className="grid grid-cols-2 gap-6">
