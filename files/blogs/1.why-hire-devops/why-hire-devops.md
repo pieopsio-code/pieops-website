@@ -281,6 +281,7 @@ Not all DevOps engineers are equally valuable for early-stage startups. Look for
 - **Series A success:** Reliable infrastructure was critical to securing funding
 
 **Key Lesson:** Early DevOps investment in startups compounds in value as the organization scales.
+
 ---
 
 ## Taking Action: Your DevOps Hiring Decision
