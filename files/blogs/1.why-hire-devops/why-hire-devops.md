@@ -298,6 +298,6 @@ If your startup hasn't yet hired DevOps expertise, the question isn't whether yo
 
 ## Get Expert Guidance
 
-Building the right infrastructure and team at the right time separates successful startups from those that crash during growth. At **Peiops.io**, we've helped dozens of early-stage startups build scalable, efficient infrastructure and develop DevOps practices that position them for hypergrowth. Whether you're deciding whether to hire, need help establishing practices, or want to audit your current infrastructure, we're here to help.
+Building the right infrastructure and team at the right time separates successful startups from those that crash during growth. At **pieops.io**, we've helped dozens of early-stage startups build scalable, efficient infrastructure and develop DevOps practices that position them for hypergrowth. Whether you're deciding whether to hire, need help establishing practices, or want to audit your current infrastructure, we're here to help.
 
 **Schedule a free consultation** to discuss your startup's specific needs and learn how DevOps expertise can accelerate your path to success. Let's ensure your infrastructure doesn't become your bottleneck.
