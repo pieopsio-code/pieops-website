@@ -38,6 +38,15 @@ export function Header() {
     setIsMenuOpen(false);
   };
 
+  const goToHome = () => {
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -52,6 +61,7 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.div
+            onClick={goToHome}
             className="text-2xl font-bold tracking-tight cursor-pointer"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
