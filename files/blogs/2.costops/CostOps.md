@@ -1,9 +1,8 @@
+*Photo by [Unsplash](https://unsplash.com/?utm_source=pieops&utm_medium=referral)*
 # Why Startups Should Fix Cloud Costs Early (Before It Becomes a Problem)
 *A practical guide from real-world engineering experience*
 
-![Cloud Cost Optimization](https://plus.unsplash.com/premium_photo-1661443781814-333019eaad2d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-<small>Photo by [Unsplash](https://unsplash.com/?utm_source=pieops&utm_medium=referral)</small>
 
 When a startup is small, everything feels flexible.  
 Developers move fast, deployments are scrappy, and infrastructure is “good enough for now.”
